@@ -22,8 +22,8 @@ parts:
     source-type: git
     plugin: autotools
     build: |
-      ./autogen.sh &&
-      ./configure.sh
+      ./autogen.sh && \
+      ./configure.sh && \
     
     install: |
       make install
