@@ -9,6 +9,7 @@ apps:
   goodvibes:
     command: desktop-launch $SNAP/usr/bin/goodvibes
     desktop: usr/share/applications/com.elboulangero.Goodvibes.desktop
+    after: [desktop-gtk3]
     plugs:
       - home
       - network
