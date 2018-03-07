@@ -20,7 +20,7 @@ parts:
   my-part:
     source: https://github.com/kz6fittycent/goodvibes
     source-type: git
-    plugin: autotools
+    plugin: make
     after: [desktop-gtk3]
     
     build-packages:
