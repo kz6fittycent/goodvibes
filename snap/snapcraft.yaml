@@ -9,7 +9,6 @@ apps:
   goodvibes:
     command: desktop-launch $SNAP/usr/bin/goodvibes
     desktop: usr/share/applications/com.elboulangero.Goodvibes.desktop
-    after: [desktop-gtk3]
     plugs:
       - home
       - network
@@ -22,6 +21,7 @@ parts:
     source: https://github.com/kz6fittycent/goodvibes
     source-type: git
     plugin: autotools
+    after: [desktop-gtk3]
     
     build-packages:
       - libgtk-3-dev 
